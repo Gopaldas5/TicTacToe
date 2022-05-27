@@ -30,12 +30,9 @@ public class TicTacToe {
             first = true;
         }
         initializeBoard();
-
+        getBoard();
     }
 
-    //board stuff
-
-    //initializes board and fills it with black spaces
     public static void initializeBoard(){
 
         for(int r = 0; r < 3; r++){
@@ -62,6 +59,21 @@ public class TicTacToe {
         }
     }
 
+    public static void getBoard(){
+
+        String bar = "  =============";
+        System.out.println("    1   2   3");
+        System.out.println(bar);
+        System.out.println("1   " + board[0][0] + " | " + board[0][1] + " | " + board[0][2]);
+        System.out.println(bar);
+        System.out.println("2   " + board[1][0] + " | " + board[1][1] + " | " + board[1][2]);
+        System.out.println(bar);
+        System.out.println("3   " + board[2][0] + " | " + board[2][1] + " | " + board[2][2]);
+        System.out.println(bar);
+        System.out.println("");
+
+
+    }
 
 
 }
